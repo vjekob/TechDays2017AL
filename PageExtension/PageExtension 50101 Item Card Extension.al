@@ -11,9 +11,9 @@ pageextension 50101 "Item Card Extension" extends "Item Card"
 
                 trigger OnAction();
                 var
-                    Invoker: Codeunit "Image Management";
+                    ImageMgt: Codeunit "Image Management";
                 begin
-                    Invoker.UploadImage(Rec);
+                    ImageMgt.UploadImage(Rec);
                     CurrPage.Update(true);
                 end;
                 

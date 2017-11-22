@@ -4,7 +4,6 @@ codeunit 50102 "My Azure Function Demo"
     var
     begin
         Message(InvokeDemoFunction);
-        
     end;
 
     local procedure InvokeDemoFunction() Result : Text;
